@@ -8,6 +8,7 @@ If you have a 1440p monitor, you may notice that Stadia keeps defaulting to 1080
 ## Installation instructions:
 
 **Download this repository as a ZIP.**
+
 ![Download image](https://github.com/johnapost/stadia-resolution/raw/master/images/download.png)
 
 **Then**
