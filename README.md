@@ -15,4 +15,4 @@ If you have a 1440p monitor, you may notice that Stadia keeps defaulting to 1080
 1. Go to `chrome://extensions/` in Chrome.
 2. Enable `Developer mode`. This is a toggle on the top right of the page as of Chrome 80.
 3. Click `Load unpacked` and select this repo's directory.
-4. Enable `Stadia Resolution` and set your preference in the extension option.
+4. Enable `Stadia Resolution` and **set your preference in the extension option.**
