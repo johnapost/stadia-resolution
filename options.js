@@ -2,7 +2,7 @@ const resolutionInput = document.querySelector("#resolution");
 
 const loadOptions = () => {
   chrome.storage.sync.get({
-    resolutionOption: "1440p"
+    resolutionOption: "unmodified"
   }, (items) => {
     resolutionInput.value = items.resolutionOption
   })

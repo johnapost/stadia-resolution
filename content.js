@@ -16,7 +16,7 @@ const set1440p = () => {
 
 window.addEventListener('load', () => {
   chrome.storage.sync.get({
-    resolutionOption: "1440p"
+    resolutionOption: "unmodified"
   }, (items) => {
     const { resolutionOption } = items;
 
