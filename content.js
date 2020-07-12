@@ -1,9 +1,14 @@
+const allowHighRes = () => {
+  localStorage.setItem("_bl3", `{"data":"[4,1]","creation":${(new Date).getTime()}}`)
+  localStorage.setItem("video_codec_implementation_by_codec_key", '{"vp9":"ExternalDecoder"}');
+}
+
 const set4k = () => {
   Object.defineProperty(window.screen, 'availWidth', {value: 3840});
   Object.defineProperty(window.screen, 'availHeight', {value: 2160});
   Object.defineProperty(window.screen, 'width', {value: 3840});
   Object.defineProperty(window.screen, 'height', {value: 2160});
-  localStorage.setItem("video_codec_implementation_by_codec_key", '{"vp9":"ExternalDecoder"}');
+  allowHighRes();
 }
 
 const set1440p = () => {
@@ -11,7 +16,7 @@ const set1440p = () => {
   Object.defineProperty(window.screen, 'availHeight', {value: 1440});
   Object.defineProperty(window.screen, 'width', {value: 2560});
   Object.defineProperty(window.screen, 'height', {value: 1440});
-  localStorage.setItem("video_codec_implementation_by_codec_key", '{"vp9":"ExternalDecoder"}');
+  allowHighRes();
 }
 
 window.addEventListener('load', () => {
