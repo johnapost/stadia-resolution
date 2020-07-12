@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Stadia Resolution",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://stadia.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "storage"
+  ]
+}
